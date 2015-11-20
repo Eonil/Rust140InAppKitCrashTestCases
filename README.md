@@ -19,5 +19,5 @@ Current state is;
 - This DOES NOT occues if the app runs out of Xcode debugger. 
   So main reason seems to be the Xcode debugging context. It seems it 
   is setting something wrong...
-
+- Running the app with command-line LLDB DOES NOT cause the issue. Ah...
 
