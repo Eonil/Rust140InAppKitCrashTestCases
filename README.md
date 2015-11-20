@@ -13,3 +13,7 @@ Current state is;
 5. AppKit app that runs `cargo` with BSD level `pty` instead of `NSTask`. Works fine.
 
 I am still don't know which causes this issue.
+
+- This issue equally occurs Rust installation by building from 
+  source using Homebrew.
+- This issue does not occur with Rust 1.2.0 `cargo` and `rustc`. They worked fine.
