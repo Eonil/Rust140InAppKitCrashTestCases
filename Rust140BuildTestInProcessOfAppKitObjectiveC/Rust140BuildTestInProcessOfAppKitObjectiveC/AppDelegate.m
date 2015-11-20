@@ -24,7 +24,7 @@
 
 	NSTask*	t	=	[[NSTask alloc] init];
 	[t setLaunchPath:@"/bin/bash"];
-	[t setArguments:@[@"--login", @"-c", @"cd ~/; rm -rf ~/testproj1; cargo new --bin testproj1; cd testproj1; cargo clean; cargo build;"]];
+	[t setArguments:@[@"--login", @"-c", @"cd ~/; rm -rf ~/testproj1; cargo new --bin testproj1; cd testproj1; cargo clean; cargo build --verbose; open .;"]];
 	[t launch];
 	[t waitUntilExit];
 }

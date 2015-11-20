@@ -10,6 +10,6 @@ import Cocoa
 
 let	t	=	NSTask()
 t.launchPath	=	"/bin/bash"
-t.arguments	=	["--login", "-c", "cd ~/; rm -rf ~/testproj1; cargo new --bin testproj1; cd testproj1; cargo clean; cargo build;"]
+t.arguments	=	["--login", "-c", "cd ~/; rm -rf ~/testproj1; cargo new --bin testproj1; cd testproj1; cargo clean; cargo build --verbose; open .;"]
 t.launch()
 t.waitUntilExit()
