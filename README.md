@@ -12,8 +12,12 @@ Current state is;
 4. AppKit app wrote in Objective-C. Also crashes.
 5. AppKit app that runs `cargo` with BSD level `pty` instead of `NSTask`. Works fine.
 
-I am still don't know which causes this issue.
 
 - This issue equally occurs Rust installation by building from 
   source using Homebrew.
 - This issue does not occur with Rust 1.2.0 `cargo` and `rustc`. They worked fine.
+- This DOES NOT occues if the app runs out of Xcode debugger. 
+  So main reason seems to be the Xcode debugging context. It seems it 
+  is setting something wrong...
+
+
